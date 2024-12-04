@@ -21,17 +21,7 @@ class Dblyll {
         }
         head = newNode;
     }
-    public void insertAtEnd(int data){
-        Node newnode=new Node(data);
-        Node temp=head;
-        while(temp.next!=null){
-            temp=temp.next;
-        }
-        if(temp.next==null){
-            newnode.prev=temp;
-            temp.next=newnode;
-        }
-    }
+
 
     public void printAll() {
         Node temp = head;
